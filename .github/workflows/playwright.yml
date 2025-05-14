@@ -25,11 +25,11 @@ jobs:
     - name: Install Browsers
       run: npx playwright install --with-deps
 
-    - name: Run Tests with HTML Report
-      run: npx playwright test --reporter=html
+    - name: Run Playwright Tests with HTML Report
+      run: npm run test:html
 
     - name: Upload HTML Report as Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: playwright-report
         path: playwright-report
