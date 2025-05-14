@@ -1,0 +1,12 @@
+{
+  "name": "playwright-login-demo",
+  "version": "1.0.0",
+  "description": "Login test using Playwright",
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1"
+  }
+}
